@@ -9,7 +9,7 @@ pipeline    {
                   }
                   stage('DEPLOY') {
                    steps {
-                        sh 'scp -r /var/lib/jenkins/workspace/pipelinejob/target/java-noob-1.0.0-SNAPSHOT.jar/ec2-user@172.31.15.235:/home/ec2-user/'
+                        sh 'scp -r /var/lib/jenkins/workspace/pipelinejob/target/java-noob-1.0.0-SNAPSHOT.jar/ ec2-user@172.31.15.235:/home/ec2-user/'
              	 }
 				     }
 			        	stage('STATUS') {
