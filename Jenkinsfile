@@ -3,7 +3,7 @@ pipeline    {
             stages {
              stage('BUILD'){
                 steps {
-                        git branch: 'main', url :''
+                        git branch: 'main', url :'https://github.com/sharath030/newjava.git'
                         sh 'mvn clean install'
                     }
                   }
